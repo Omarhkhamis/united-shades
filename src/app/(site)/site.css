@@ -615,6 +615,8 @@ p { margin: 0; }
 .footer h4 { color: #fff; font-size: 16px; margin-bottom: 16px; }
 .footer__grid a { display: block; font-size: 15px; padding-block: 5px; transition: color .3s, transform .3s; width: fit-content; }
 .footer__grid a:hover { color: var(--orange); transform: translateX(-4px); }
+.footer__grid a.footer__contact { display: flex; align-items: center; gap: 10px; }
+.footer__contact svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--orange); }
 .footer__bottom { display: flex; justify-content: space-between; align-items: center; padding-block: 24px; border-top: 1px solid var(--line-light); font-size: 14px; }
 .totop { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,.06); color: #fff; transition: background .3s; }
 .totop:hover { background: var(--orange); }

@@ -601,9 +601,9 @@ function Footer({ c, s }: { c: SiteContent["footer"]; s: SiteContent["settings"]
         </div>
         <div>
           <h4>تواصل</h4>
-          <a href={`tel:${s.phone}`} dir="ltr">{s.phone}</a>
-          <a href={`mailto:${s.email}`}>{s.email}</a>
-          {s.website && <a href={s.website} target="_blank" rel="noopener">{websiteLabel}</a>}
+          <a className="footer__contact" href={`tel:${s.phone}`}><Ico id="phone" /><span dir="ltr">{s.phone}</span></a>
+          <a className="footer__contact" href={`mailto:${s.email}`}><Ico id="mail" /><span>{s.email}</span></a>
+          {s.website && <a className="footer__contact" href={s.website} target="_blank" rel="noopener"><Ico id="globe" /><span>{websiteLabel}</span></a>}
         </div>
       </div>
       <div className="container footer__bottom">
