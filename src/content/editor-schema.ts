@@ -52,7 +52,7 @@ export const editorSchema: SectionSchema[] = [
       {
         title: "بيانات التواصل",
         fields: [
-          { kind: "text", name: "phone", label: "الرقم الموحّد" },
+          { kind: "text", name: "phone", label: "رقم الهاتف" },
           { kind: "text", name: "whatsapp", label: "رقم واتساب (بالصيغة الدولية بدون + )", hint: "مثال: 966559889797 — تُبنى منه كل أزرار واتساب في الموقع." },
           { kind: "text", name: "whatsappDisplay", label: "رقم الجوال كما يظهر للزائر" },
           { kind: "text", name: "email", label: "البريد الإلكتروني" },

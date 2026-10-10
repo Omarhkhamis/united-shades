@@ -527,7 +527,7 @@ function Contact({ c, s }: { c: SiteContent["contact"]; s: SiteContent["settings
           <p className="eyebrow">{c.eyebrow}</p>
           <h2 className="section-title split">{rich(c.title)}</h2>
           <ul className="cinfo">
-            <li><span className="cinfo__ico"><Ico id="phone" /></span><div><small>الرقم الموحّد</small><a href={`tel:${s.phone}`} dir="ltr">{s.phone}</a></div></li>
+            <li><span className="cinfo__ico"><Ico id="phone" /></span><div><small>رقم الهاتف</small><a href={`tel:${s.phone}`} dir="ltr">{s.phone}</a></div></li>
             <li><span className="cinfo__ico"><Ico id="wa" /></span><div><small>جوال / واتساب</small><a href={wa(s.whatsapp)} target="_blank" rel="noopener" dir="ltr">{s.whatsappDisplay}</a></div></li>
             <li><span className="cinfo__ico"><Ico id="mail" /></span><div><small>البريد الإلكتروني</small><a href={`mailto:${s.email}`}>{s.email}</a></div></li>
             <li><span className="cinfo__ico"><Ico id="pin" /></span><div><small>العنوان</small><span>{s.address}</span></div></li>
