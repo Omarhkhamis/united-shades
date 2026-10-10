@@ -2,3 +2,15 @@
 /logo.png
 /photo.jpeg
 *.pdf
+/logo-notext.jpeg
+
+# next / node
+/node_modules
+/.next
+/out
+next-env.d.ts
+*.tsbuildinfo
+
+# env
+.env
+.env*.local

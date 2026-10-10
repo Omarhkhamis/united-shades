@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: united_shades_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: united
+      POSTGRES_PASSWORD: united_dev_pass
+      POSTGRES_DB: united_shades
+    ports:
+      - "5440:5432"
+    volumes:
+      - united_shades_pg:/var/lib/postgresql/data
+
+volumes:
+  united_shades_pg:
