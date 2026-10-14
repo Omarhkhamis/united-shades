@@ -164,22 +164,10 @@ p { margin: 0; }
 /* ---------- Hero — "Sheet 01" ---------- */
 .hero--sheet {
   --paper: #f3ede3;
-  --grid: rgba(77, 77, 76, .07);
   position: relative; min-height: 100svh; overflow: hidden;
   padding-top: calc(var(--header-h) + 8px); padding-bottom: 70px;
   background: var(--paper); color: var(--ink);
   display: flex; flex-direction: column;
-}
-/* drafting sheet: fine 24px grid + stronger 120px grid + sheet margin frame */
-.hero__sheet {
-  position: absolute; inset: 0; pointer-events: none;
-  background:
-    linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 24px 24px,
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 24px 24px,
-    linear-gradient(rgba(77,77,76,.09) 1px, transparent 1px) 0 0 / 120px 120px,
-    linear-gradient(90deg, rgba(77,77,76,.09) 1px, transparent 1px) 0 0 / 120px 120px;
-  -webkit-mask-image: radial-gradient(120% 90% at 30% 40%, #000 40%, transparent 100%);
-          mask-image: radial-gradient(120% 90% at 30% 40%, #000 40%, transparent 100%);
 }
 .hero__meta {
   position: relative; display: flex; justify-content: space-between; gap: 20px;
@@ -199,7 +187,7 @@ p { margin: 0; }
 .hero--sheet .hero__title .line:first-child { font-size: .52em; font-weight: 600; letter-spacing: -.01em; color: var(--charcoal); padding-bottom: 0; }
 .hero--sheet .hero__title .word { display: inline-block; }
 /* «ظلّ» casts a real shadow on the ground line — driven by the "sun" (mouse + scroll) */
-.shade-word { position: relative; color: var(--orange); font-size: 1.45em; line-height: 1.15; margin-top: .34em; }
+.shade-word { position: relative; color: var(--orange); font-size: 1.45em; line-height: 1.15; margin-top: .62em; }
 .shade-word__cast {
   position: absolute; inset: 0; z-index: -1; color: var(--ink); opacity: .13;
   transform-origin: 50% 88%; transform: skewX(-38deg) scaleY(.42) translateY(4%);
@@ -681,7 +669,6 @@ p { margin: 0; }
   .hero--classic .hero__visual { height: 440px; }
   .hero--classic .hero__badge { left: 0; }
   .plate { max-height: none; }
-  .hero__meta-mid { display: none; }
   .why__intro, .faq__intro { position: static; }
   .materials__grid { grid-template-columns: 1fr; }
   .plist__rows { columns: 1; }

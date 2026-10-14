@@ -354,7 +354,6 @@ export function initSite() {
     const heroST = { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true };
     gsap.to('.hero__content', { y: -90, ease: 'none', scrollTrigger: { ...heroST } });
     gsap.to('.hero__visual', { y: -40, ease: 'none', scrollTrigger: { ...heroST } });
-    gsap.to('.hero__sheet', { backgroundPosition: '0 -120px, 0 -120px, 0 -60px, 0 -60px', ease: 'none', scrollTrigger: { ...heroST } });
     // as you scroll the sun climbs → the shadow shortens
     gsap.fromTo(cast, { scaleY: .42 }, { scaleY: .12, immediateRender: false, ease: 'none', scrollTrigger: { ...heroST } });
 

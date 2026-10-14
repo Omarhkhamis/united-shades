@@ -116,12 +116,8 @@ function Hero({ c }: { c: SiteContent }) {
   const h = c.hero;
   return (
     <section className="hero hero--sheet" id="home">
-      <div className="hero__sheet" aria-hidden="true"></div>
-
       <div className="container hero__meta" aria-hidden="true">
-        <span dir="ltr">24.7136° N — 46.6753° E</span>
         <span className="hero__meta-mid">{h.location}</span>
-        <span dir="ltr">SHEET 01 / 12</span>
       </div>
 
       <div className="container hero__grid">
