@@ -141,7 +141,7 @@ function Hero({ c }: { c: SiteContent }) {
 
         <figure className="hero__visual">
           <div className="plate">
-            <img className="plate__photo" src={h.image} alt={h.imageAlt} width={1000} height={1309} />
+            <img className="plate__photo" src={h.image} alt={h.imageAlt} width={1528} height={2000} />
             <div className="plate__paper" aria-hidden="true"></div>
             <PlateDrawing />
             <div className="plate__labels" aria-hidden="true">

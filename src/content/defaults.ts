@@ -58,7 +58,7 @@ export const defaultContent = {
     shadeWord: "ظِلّ",
     lead: "نصمّم ونصنّع ونركّب حلول التظليل الإنشائي — من مواقف السيارات إلى الساحات الكبرى — بهياكل تتحدّى شمس المملكة وتدوم لسنوات.",
     ctaLabel: "اطلب عرض سعر",
-    image: img("park-umbrella.jpg"),
+    image: img("park-umbrella.webp"),
     imageAlt: "مظلة مخروطية نفّذتها المتحدة للمظلات في حديقة عامة",
     caption: "حديقة عامة — مظلة مخروطية",
   },
@@ -80,9 +80,9 @@ export const defaultContent = {
     title: "في قلب الرياض، وتحت شمسٍ تشتدّ كل عام، بدأت *المتحدة للمظلات.*",
     text: "تأسسنا عام 2011م، ونضم اليوم فريقاً من **54 كادراً بشرياً** و**31 معدة**، لنصنع الظل الذي يحمي ويحيي، والهياكل التي تدوم. نحن متخصّصون في تصميم وتصنيع وتركيب المظلات والسواتر وهياكل الحماية — من مواقف السيارات إلى الساحات الكبرى — ونخدم القطاعين التجاري والحكومي في الرياض وكل مناطق المملكة.",
     quote: "«خبرتنا في التفاصيل، وقوّتنا في الإتقان.»",
-    imageA: img("kfsh-dammam-1.jpg"),
+    imageA: img("kfsh-dammam-1.webp"),
     imageAAlt: "مظلات مواقف مستشفى الملك فهد بالدمام",
-    imageB: img("nbu.jpg"),
+    imageB: img("nbu.webp"),
     imageBAlt: "مظلات مواقف جامعة الحدود الشمالية",
     visionTitle: "رؤيتنا",
     visionText: "المرجع الاستراتيجي الأول لحلول التظليل الإنشائي والتغطيات المتقدمة في السوق السعودي.",
@@ -108,49 +108,49 @@ export const defaultContent = {
     title: "حلول ظلٍّ تُلهم المستقبل.",
     items: [
       {
-        image: img("kfsh-dammam-2.jpg"),
+        image: img("kfsh-dammam-2.webp"),
         alt: "مظلات مواقف سيارات",
         title: "أنظمة مظلات مواقف السيارات",
         en: "Carport Solutions",
         text: "حلول تظليل هندسية متكاملة للمشاريع السكنية والتجارية والمجمعات الحكومية، بتصاميم متعددة (كابولي، معلّق، هرمي) بأعلى مواصفات مقاومة الرياح والعزل الحراري.",
       },
       {
-        image: img("park-tent.jpg"),
+        image: img("park-tent.webp"),
         alt: "هياكل نسيجية معمارية",
         title: "الهياكل النسيجية المعمارية",
         en: "Tensile Structures",
         text: "تصاميم حديثة تغطّي المساحات المفتوحة والمداخل الرئيسية، نعتمد فيها على أحدث برامج التحليل الإنشائي وأقمشة PTFE / PVDF.",
       },
       {
-        image: img("tents.jpg"),
+        image: img("tents.webp"),
         alt: "خيام وبيوت شعر",
         title: "الخيام وبيوت الشعر الملكية",
         en: "Tents & Traditional Pavilions",
         text: "خيام تراثية وبيوت شعر عصرية بأعلى معايير العزل المائي والحراري، مع تجهيز داخلي فاخر يلبّي متطلبات الاستراحات والقصور والمخيمات.",
       },
       {
-        image: img("pergola.jpg"),
+        image: img("pergola.webp"),
         alt: "برجولات وجلسات خارجية",
         title: "البرجولات والجلسات الخارجية",
         en: "Pergolas & Outdoor Living",
         text: "مساحات جلوس خارجية تجمع بين الفخامة والظل، بتصاميم حديدية خشبية أو ألمنيوم أو خشب معالج تتكامل مع الحدائق والأسطح والفناءات.",
       },
       {
-        image: img("screen-modern.jpg"),
+        image: img("screen-modern.webp"),
         alt: "سواتر حديد مودرن",
         title: "السواتر والحواجز البصرية",
         en: "Privacy Screens & Louvers",
         text: "حلول لتأمين الخصوصية والحماية المحيطية بخيارات متعددة (شرائح لوفر، مجدول، بلاستيك معالج، قص ليزر CNC) مقاومة للصدأ والعوامل الجوية.",
       },
       {
-        image: img("mosque.jpg"),
+        image: img("mosque.webp"),
         alt: "تظليل ساحات المساجد",
         title: "تظليل الساحات والمنشآت الكبرى",
         en: "Large-Scale Shading",
         text: "تغطية الملاعب والمدارس وساحات المساجد والممشى العام بهياكل هندسية مدروسة تضمن التهوية ونفاذية الضوء والحماية القصوى من الأشعة.",
       },
       {
-        image: img("jouf.jpg"),
+        image: img("jouf.webp"),
         alt: "صيانة المظلات",
         title: "الصيانة وإعادة التأهيل",
         en: "Maintenance & Refurbishment",
@@ -169,7 +169,7 @@ export const defaultContent = {
         label: "مظلات السيارات",
         items: [
           {
-            image: img("kfsh-dammam-2.jpg"),
+            image: img("kfsh-dammam-2.webp"),
             title: "مظلات كابولي",
             text: "",
             specs: [
@@ -179,7 +179,7 @@ export const defaultContent = {
             ],
           },
           {
-            image: img("metro-2.jpg"),
+            image: img("metro-2.webp"),
             title: "مظلات معلّقة (T)",
             text: "",
             specs: [
@@ -189,7 +189,7 @@ export const defaultContent = {
             ],
           },
           {
-            image: img("lg.jpg"),
+            image: img("lg.webp"),
             title: "مظلات هرمية",
             text: "",
             specs: [
@@ -199,7 +199,7 @@ export const defaultContent = {
             ],
           },
           {
-            image: img("jouf.jpg"),
+            image: img("jouf.webp"),
             title: "مظلات مقوّسة",
             text: "",
             specs: [
@@ -214,31 +214,31 @@ export const defaultContent = {
         label: "السواتر",
         items: [
           {
-            image: img("screen-horizontal.jpg"),
+            image: img("screen-horizontal.webp"),
             title: "سواتر شرائح أفقية",
             text: "شرائح أفقية توفر الخصوصية وتخفف أشعة الشمس مع السماح بمرور الهواء.",
             specs: [],
           },
           {
-            image: img("screen-modern.jpg"),
+            image: img("screen-modern.webp"),
             title: "سواتر حديد مودرن",
             text: "قطاعات تيوبات حديد مدهونة حرارياً (Powder Coated) باللون البني أو الرمادي.",
             specs: [],
           },
           {
-            image: img("screen-louver.jpg"),
+            image: img("screen-louver.webp"),
             title: "سواتر لوفر",
             text: "شرائح مفرغة جزئياً لمرور الهواء وتقليل حمل الرياح مع توفير الخصوصية.",
             specs: [],
           },
           {
-            image: img("screen-wood.jpg"),
+            image: img("screen-wood.webp"),
             title: "خشب بلاستيكي معالج",
             text: "شرائح من بديل الخشب مقاومة للشمس والرطوبة بمظهر طبيعي دافئ.",
             specs: [],
           },
           {
-            image: img("screen-laser.jpg"),
+            image: img("screen-laser.webp"),
             title: "حديد قص ليزر",
             text: "ألواح حديد مفرغة بالليزر توفر الخصوصية والظل مع تصاميم زخرفية متنوعة.",
             specs: [],
@@ -249,7 +249,7 @@ export const defaultContent = {
         label: "الخيام والبرجولات",
         items: [
           {
-            image: img("tents.jpg"),
+            image: img("tents.webp"),
             title: "بيوت الشعر الملكية",
             text: "",
             specs: [
@@ -259,7 +259,7 @@ export const defaultContent = {
             ],
           },
           {
-            image: img("park-tent.jpg"),
+            image: img("park-tent.webp"),
             title: "الخيام النسيجية",
             text: "",
             specs: [
@@ -269,7 +269,7 @@ export const defaultContent = {
             ],
           },
           {
-            image: img("pergola.jpg"),
+            image: img("pergola.webp"),
             title: "البرجولات",
             text: "",
             specs: [
@@ -279,7 +279,7 @@ export const defaultContent = {
             ],
           },
           {
-            image: img("park-umbrella.jpg"),
+            image: img("park-umbrella.webp"),
             title: "مظلات الحدائق المخروطية",
             text: "",
             specs: [
@@ -326,7 +326,7 @@ export const defaultContent = {
     eyebrow: "لماذا المتحدة؟",
     title: "مع المتحدة، أنت لا تختار مظلة فقط — بل تختار *شريكاً* يهتم بكل تفصيل.",
     text: "نبدأ كل مشروع بفهم احتياج العميل وطبيعة الموقع، ثم نقترح الحل الأنسب من حيث الشكل والمتانة والاستخدام. ومن مرحلة القياس وحتى التركيب النهائي، نحرص أن تكون التفاصيل واضحة والتنفيذ دقيقاً.",
-    image: img("kkesh.jpg"),
+    image: img("kkesh.webp"),
     imageAlt: "مظلات مواقف مستشفى الملك خالد للعيون",
     features: [
       { title: "خبرة عملية", text: "حلول مناسبة للمنازل والشركات والمواقف والحدائق والاستراحات منذ 2011." },
@@ -342,16 +342,16 @@ export const defaultContent = {
     eyebrow: "معرض الأعمال",
     title: "أعمال نفّذناها بعناية… لتبقى أثراً يُرى كل يوم.",
     items: [
-      { image: img("park-umbrella.jpg"), alt: "حديقة عامة", title: "حديقة عامة", subtitle: "مظلة مخروطية", category: "public", tall: true },
-      { image: img("lg.jpg"), alt: "شركة LG", title: "شركة LG", subtitle: "مظلات مواقف", category: "parking", tall: true },
-      { image: img("mosque.jpg"), alt: "مسجد حي الرمال", title: "مسجد حي الرمال", subtitle: "تظليل ساحات", category: "public", tall: true },
-      { image: img("park-tent.jpg"), alt: "حديقة عامة", title: "حديقة عامة", subtitle: "هيكل نسيجي", category: "public", tall: false },
-      { image: img("kkesh.jpg"), alt: "مستشفى الملك خالد للعيون", title: "مستشفى الملك خالد للعيون", subtitle: "الرياض", category: "health", tall: false },
-      { image: img("kfsh-dammam-1.jpg"), alt: "مستشفى الملك فهد بالدمام", title: "مستشفى الملك فهد", subtitle: "الدمام · مظلات مواقف", category: "health", tall: true },
-      { image: img("metro-2.jpg"), alt: "موقف مترو الرياض", title: "موقف مترو الرياض", subtitle: "مظلات معلّقة", category: "parking", tall: true },
-      { image: img("metro-1.jpg"), alt: "موقف مترو الرياض", title: "موقف مترو الرياض", subtitle: "مشروع قطار الرياض", category: "parking", tall: true },
-      { image: img("kfsh-dammam-2.jpg"), alt: "مستشفى الملك فهد بالدمام", title: "مستشفى الملك فهد", subtitle: "الدمام", category: "parking", tall: false },
-      { image: img("jouf.jpg"), alt: "مواقف أمانة منطقة الجوف", title: "مواقف أمانة الجوف", subtitle: "الجوف", category: "parking", tall: false },
+      { image: img("park-umbrella.webp"), alt: "حديقة عامة", title: "حديقة عامة", subtitle: "مظلة مخروطية", category: "public", tall: true },
+      { image: img("lg.webp"), alt: "شركة LG", title: "شركة LG", subtitle: "مظلات مواقف", category: "parking", tall: true },
+      { image: img("mosque.webp"), alt: "مسجد حي الرمال", title: "مسجد حي الرمال", subtitle: "تظليل ساحات", category: "public", tall: true },
+      { image: img("park-tent.webp"), alt: "حديقة عامة", title: "حديقة عامة", subtitle: "هيكل نسيجي", category: "public", tall: false },
+      { image: img("kkesh.webp"), alt: "مستشفى الملك خالد للعيون", title: "مستشفى الملك خالد للعيون", subtitle: "الرياض", category: "health", tall: false },
+      { image: img("kfsh-dammam-1.webp"), alt: "مستشفى الملك فهد بالدمام", title: "مستشفى الملك فهد", subtitle: "الدمام · مظلات مواقف", category: "health", tall: true },
+      { image: img("metro-2.webp"), alt: "موقف مترو الرياض", title: "موقف مترو الرياض", subtitle: "مظلات معلّقة", category: "parking", tall: true },
+      { image: img("metro-1.webp"), alt: "موقف مترو الرياض", title: "موقف مترو الرياض", subtitle: "مشروع قطار الرياض", category: "parking", tall: true },
+      { image: img("kfsh-dammam-2.webp"), alt: "مستشفى الملك فهد بالدمام", title: "مستشفى الملك فهد", subtitle: "الدمام", category: "parking", tall: false },
+      { image: img("jouf.webp"), alt: "مواقف أمانة منطقة الجوف", title: "مواقف أمانة الجوف", subtitle: "الجوف", category: "parking", tall: false },
     ],
   },
 
