@@ -184,10 +184,10 @@ p { margin: 0; }
   margin-bottom: clamp(22px, 3.5vh, 36px); color: var(--ink);
 }
 .hero--sheet .hero__title .line { display: block; overflow: hidden; padding-block: .06em .14em; }
-.hero--sheet .hero__title .line:first-child { font-size: .52em; font-weight: 600; letter-spacing: -.01em; color: var(--charcoal); padding-bottom: 0; }
+.hero--sheet .hero__title .line:first-child { font-size: .52em; font-weight: 600; letter-spacing: -.01em; color: var(--charcoal); padding-bottom: .22em; }
 .hero--sheet .hero__title .word { display: inline-block; }
 /* «ظلّ» casts a real shadow on the ground line — driven by the "sun" (mouse + scroll) */
-.shade-word { position: relative; color: var(--orange); font-size: 1.45em; line-height: 1.15; margin-top: .62em; }
+.shade-word { position: relative; color: var(--orange); font-size: 1.45em; line-height: 1.15; margin-top: .45em; }
 .shade-word__cast {
   position: absolute; inset: 0; z-index: -1; color: var(--ink); opacity: .13;
   transform-origin: 50% 88%; transform: skewX(-38deg) scaleY(.42) translateY(4%);
