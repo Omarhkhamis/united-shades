@@ -659,8 +659,6 @@ p { margin: 0; }
   .nav__link, .header.is-scrolled .nav__link { color: #fff; font-size: 26px; padding: 10px 20px; }
   .nav__link:hover, .nav__link.is-active, .header.is-scrolled .nav__link.is-active { color: var(--orange); }
   .burger { display: block; }
-  .header__actions .btn--wa span { display: none; }
-  .header__actions .btn--wa { padding: 12px; }
   .header__logo { width: 124px; }
 
   .hero__grid, .about__grid, .why__grid, .faq__grid, .contact__grid { grid-template-columns: 1fr; }

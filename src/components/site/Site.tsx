@@ -20,7 +20,7 @@ export function Site({ c }: { c: SiteContent }) {
   return (
     <>
       <Preloader />
-      <Header whatsapp={s.whatsapp} />
+      <Header />
       <main>
         <Hero c={c} />
         <Ticker items={c.ticker.items} />
@@ -82,7 +82,7 @@ const NAV = [
   ["#contact", "اتصل بنا"],
 ] as const;
 
-function Header({ whatsapp }: { whatsapp: string }) {
+function Header() {
   return (
     <header className="header" id="header">
       <div className="container header__inner">
@@ -98,10 +98,6 @@ function Header({ whatsapp }: { whatsapp: string }) {
         </nav>
 
         <div className="header__actions">
-          <a href={wa(whatsapp)} target="_blank" rel="noopener" className="btn btn--wa btn--sm" aria-label="تواصل عبر واتساب">
-            <Ico id="wa" className="ico" />
-            <span>واتساب</span>
-          </a>
           <button className="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
             <span></span><span></span><span></span>
           </button>
