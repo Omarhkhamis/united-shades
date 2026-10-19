@@ -9,9 +9,9 @@ const img = (name: string) => `/assets/img/${name}`;
 
 export const defaultContent = {
   settings: {
-    phone: "920002079",
+    phone: "+966559889797",
     whatsapp: "966559889797",
-    whatsappDisplay: "055 988 9797",
+    whatsappDisplay: "+966559889797",
     email: "info@uscompany.com.sa",
     address: "الرياض، المملكة العربية السعودية",
     website: "https://uscompany.com.sa",
