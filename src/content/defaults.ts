@@ -13,7 +13,7 @@ export const defaultContent = {
     whatsapp: "966559889797",
     whatsappDisplay: "+966559889797",
     email: "info@uscompany.com.sa",
-    address: "الرياض، المملكة العربية السعودية",
+    address: "طريق الخرج، حي المصانع، الرياض، المملكة العربية السعودية",
     website: "https://uscompany.com.sa",
     instagram: "",
     x: "",
