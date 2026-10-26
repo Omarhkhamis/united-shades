@@ -423,6 +423,7 @@ export function initSite() {
     reveal('.stat', { y: 60, opacity: 0 }, { stagger: .1, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.stats__grid', start: 'top 85%' } });
 
     /* ---------- Cards stagger ---------- */
+    reveal('.shopc', { y: 70, opacity: 0 }, { stagger: .1, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.shopgrid', start: 'top 85%' } });
     reveal('.panel.is-active .pcard', { y: 70, opacity: 0 }, { stagger: .1, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.pgrid', start: 'top 85%' } });
     reveal('.feat', { x: -60, opacity: 0 }, { stagger: .12, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.why__list', start: 'top 80%' } });
     reveal('.q', { y: 60, opacity: 0 }, { stagger: .08, duration: .9, ease: 'power3.out', scrollTrigger: { trigger: '.qgrid', start: 'top 85%' } });

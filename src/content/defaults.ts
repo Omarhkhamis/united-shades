@@ -299,6 +299,23 @@ export const defaultContent = {
     ],
   },
 
+  shop: {
+    eyebrow: "اطلب مظلتك",
+    title: "اختر نوع المظلة، *واطلب عرض سعرك.*",
+    text: "أسعار تقريبية للمتر — يتحدد السعر النهائي بعد المعاينة حسب المقاس والخامة وموقع التركيب.",
+    priceLabel: "السعر التقريبي",
+    unit: "ريال للمتر",
+    fromLabel: "يبدأ من",
+    buttonLabel: "اطلب الآن",
+    messagePrefix: "أريد عرض سعر لمظلة",
+    items: [
+      { image: img("kfsh-dammam-2.webp"), alt: "مظلات كابولي لمواقف السيارات", title: "مظلات كابولي", type: "كابولي", priceFrom: 180, priceTo: 280 },
+      { image: img("lg.webp"), alt: "مظلات هرمية لمواقف السيارات", title: "مظلات هرمية", type: "هرمية", priceFrom: 120, priceTo: 200 },
+      { image: img("jouf.webp"), alt: "مظلات مقوّسة لمواقف السيارات", title: "مظلات مقوّسة", type: "مقوّسة", priceFrom: 150, priceTo: 250 },
+      { image: img("metro-2.webp"), alt: "مظلات معلّقة على شكل حرف T", title: "مظلات معلّقة (T)", type: "معلّقة (T)", priceFrom: 180, priceTo: 300 },
+    ],
+  },
+
   clients: {
     eyebrow: "علامات اشتغلنا معها",
     title: "ثقةُ كبرى الجهات في المملكة.",

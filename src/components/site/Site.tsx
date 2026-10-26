@@ -28,6 +28,7 @@ export function Site({ c }: { c: SiteContent }) {
         <Stats c={c.stats} />
         <Services c={c.services} />
         <Products c={c.products} />
+        <Shop c={c.shop} whatsapp={s.whatsapp} />
         <Clients c={c.clients} />
         <Why c={c.why} />
         <Gallery c={c.gallery} projects={c.projects} />
@@ -77,6 +78,7 @@ const NAV = [
   ["#home", "الرئيسية"],
   ["#services", "الخدمات"],
   ["#sections", "الأقسام"],
+  ["#shop", "الأسعار"],
   ["#gallery", "معرض الأعمال"],
   ["#faq", "الأسئلة الشائعة"],
   ["#contact", "اتصل بنا"],
@@ -326,6 +328,44 @@ function Products({ c }: { c: SiteContent["products"] }) {
               <div className="mat fade-up" key={i}><b>{m.name}</b><span>{m.text}</span></div>
             ))}
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ============ SHOP — prices + order on WhatsApp ============ */
+function Shop({ c, whatsapp }: { c: SiteContent["shop"]; whatsapp: string }) {
+  const fmt = (n: number) => n.toLocaleString("en-US");
+  return (
+    <section className="shop section" id="shop">
+      <div className="container">
+        <div className="shop__head">
+          <p className="eyebrow">{c.eyebrow}</p>
+          <h2 className="section-title split">{rich(c.title)}</h2>
+          {c.text && <p className="shop__lead fade-up">{c.text}</p>}
+        </div>
+
+        <div className="shopgrid">
+          {c.items.map((p, i) => (
+            <article className="shopc" key={i}>
+              <div className="shopc__img">
+                <img src={p.image} alt={p.alt || p.title} loading="lazy" />
+                <span className="shopc__tag">{c.fromLabel} <b>{fmt(p.priceFrom)}</b> ريال</span>
+              </div>
+              <div className="shopc__body">
+                <h3>{p.title}</h3>
+                <div className="shopc__price">
+                  <small>{c.priceLabel}</small>
+                  <strong>{fmt(p.priceFrom)}<i>–</i>{fmt(p.priceTo)}</strong>
+                  <span>{c.unit}</span>
+                </div>
+                <a href={wa(whatsapp, `${c.messagePrefix} ${p.type}`.trim())} target="_blank" rel="noopener" className="btn btn--primary btn--block shopc__buy">
+                  <Ico id="wa" className="ico" /> {c.buttonLabel}
+                </a>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
@@ -585,7 +625,7 @@ function Footer({ c, s }: { c: SiteContent["footer"]; s: SiteContent["settings"]
         </div>
         <div>
           <h4>روابط</h4>
-          <a href="#home">الرئيسية</a><a href="#services">الخدمات</a><a href="#sections">الأقسام</a><a href="#gallery">معرض الأعمال</a><a href="#contact">اتصل بنا</a>
+          <a href="#home">الرئيسية</a><a href="#services">الخدمات</a><a href="#sections">الأقسام</a><a href="#shop">الأسعار</a><a href="#gallery">معرض الأعمال</a><a href="#contact">اتصل بنا</a>
         </div>
         <div>
           <h4>خدماتنا</h4>

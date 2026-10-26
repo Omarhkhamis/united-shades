@@ -1,6 +1,6 @@
 import {
   BadgeCheck, Globe, Inbox, CircleHelp, Columns3, FolderKanban, Handshake, Home, Images, Info, LayoutGrid, Megaphone,
-  PanelBottom, Phone, Settings, Sparkles, TrendingUp, Wrench, type LucideIcon,
+  PanelBottom, Phone, Settings, ShoppingBag, Sparkles, TrendingUp, Wrench, type LucideIcon,
 } from "lucide-react";
 
 export const sectionIcons: Record<string, LucideIcon> = {
@@ -11,6 +11,7 @@ export const sectionIcons: Record<string, LucideIcon> = {
   stats: TrendingUp,
   services: Wrench,
   products: LayoutGrid,
+  shop: ShoppingBag,
   clients: Handshake,
   why: Sparkles,
   gallery: Images,
