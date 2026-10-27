@@ -305,7 +305,8 @@ export const defaultContent = {
     text: "أسعار تقريبية للمتر — يتحدد السعر النهائي بعد المعاينة حسب المقاس والخامة وموقع التركيب.",
     unit: "ريال للمتر",
     fromLabel: "يبدأ من",
-    buttonLabel: "اطلب الآن",
+    buttonLabel: "أضف إلى السلة",
+    waLabel: "أو اطلب عرض سعر عبر واتساب",
     messagePrefix: "أريد عرض سعر لمظلة",
     items: [
       { image: img("kfsh-dammam-2.webp"), alt: "مظلات كابولي لمواقف السيارات", title: "مظلات كابولي", type: "كابولي", priceFrom: 180 },

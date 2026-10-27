@@ -341,7 +341,8 @@ export const editorSchema: SectionSchema[] = [
         fields: [
           { kind: "text", name: "unit", label: "وحدة السعر" },
           { kind: "text", name: "fromLabel", label: "النص فوق السعر" },
-          { kind: "text", name: "buttonLabel", label: "نص زر الشراء" },
+          { kind: "text", name: "buttonLabel", label: "نص زر الإضافة إلى السلة" },
+          { kind: "text", name: "waLabel", label: "نص رابط واتساب تحت الزر", hint: "اتركه فارغاً لإخفاء الرابط." },
           { kind: "text", name: "messagePrefix", label: "بداية رسالة واتساب", hint: "يُضاف بعدها نوع المظلة تلقائياً.", wide: true },
         ],
       },

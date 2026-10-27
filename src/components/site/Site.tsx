@@ -5,11 +5,12 @@ import { rich } from "@/content/rich";
 import { IconSprite } from "./IconSprite";
 import { MARK_DARK, MARK_ORANGE } from "./mark-paths";
 import { PlateDrawing } from "./PlateDrawing";
+import { AddToCartButton, CartButton } from "@/components/store/StoreButtons";
 
-const wa = (number: string, text?: string) =>
+export const wa = (number: string, text?: string) =>
   `https://wa.me/${number}` + (text ? `?text=${encodeURIComponent(text)}` : "");
 
-const Ico = ({ id, className }: { id: string; className?: string }) => (
+export const Ico = ({ id, className }: { id: string; className?: string }) => (
   <svg viewBox="0 0 24 24" className={className}>
     <use href={`#i-${id}`} />
   </svg>
@@ -84,22 +85,24 @@ const NAV = [
   ["#contact", "اتصل بنا"],
 ] as const;
 
-function Header() {
+/** `base` is "" on the home page and "/" on other pages, so in-page anchors still work. */
+export function Header({ base = "" }: { base?: string }) {
   return (
     <header className="header" id="header">
       <div className="container header__inner">
-        <a href="#home" className="header__logo" aria-label="المتحدة للمظلات - الرئيسية">
+        <a href={`${base}#home`} className="header__logo" aria-label="المتحدة للمظلات - الرئيسية">
           <img src="/assets/img/logo-light.png" alt="المتحدة للمظلات" className="logo-light" width={464} height={167} />
           <img src="/assets/img/logo.png" alt="" className="logo-dark" width={464} height={167} aria-hidden="true" />
         </a>
 
         <nav className="nav" id="nav" aria-label="القائمة الرئيسية">
           {NAV.map(([href, label], i) => (
-            <a key={href} href={href} className={"nav__link" + (i === 0 ? " is-active" : "")}>{label}</a>
+            <a key={href} href={`${base}${href}`} className={"nav__link" + (i === 0 && !base ? " is-active" : "")}>{label}</a>
           ))}
         </nav>
 
         <div className="header__actions">
+          <CartButton />
           <button className="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
             <span></span><span></span><span></span>
           </button>
@@ -359,9 +362,15 @@ function Shop({ c, whatsapp }: { c: SiteContent["shop"]; whatsapp: string }) {
                   <strong>{fmt(p.priceFrom)}</strong>
                   <span>{c.unit}</span>
                 </div>
-                <a href={wa(whatsapp, `${c.messagePrefix} ${p.type}`.trim())} target="_blank" rel="noopener" className="btn btn--primary btn--block shopc__buy">
-                  <Ico id="wa" className="ico" /> {c.buttonLabel}
-                </a>
+                <AddToCartButton
+                  item={{ id: p.type || p.title, title: p.title, type: p.type, image: p.image, unitPrice: p.priceFrom }}
+                  label={c.buttonLabel}
+                />
+                {c.waLabel && (
+                  <a href={wa(whatsapp, `${c.messagePrefix} ${p.type}`.trim())} target="_blank" rel="noopener" className="shopc__wa">
+                    <Ico id="wa" /> {c.waLabel}
+                  </a>
+                )}
               </div>
             </article>
           ))}
@@ -612,7 +621,7 @@ function Contact({ c, s }: { c: SiteContent["contact"]; s: SiteContent["settings
 }
 
 /* ============ FOOTER ============ */
-function Footer({ c, s }: { c: SiteContent["footer"]; s: SiteContent["settings"] }) {
+export function Footer({ c, s, base = "" }: { c: SiteContent["footer"]; s: SiteContent["settings"]; base?: string }) {
   const websiteLabel = s.website.replace(/^https?:\/\//, "").replace(/\/$/, "");
   return (
     <footer className="footer">
@@ -624,11 +633,11 @@ function Footer({ c, s }: { c: SiteContent["footer"]; s: SiteContent["settings"]
         </div>
         <div>
           <h4>روابط</h4>
-          <a href="#home">الرئيسية</a><a href="#services">الخدمات</a><a href="#sections">الأقسام</a><a href="#shop">الأسعار</a><a href="#gallery">معرض الأعمال</a><a href="#contact">اتصل بنا</a>
+          <a href={`${base}#home`}>الرئيسية</a><a href={`${base}#services`}>الخدمات</a><a href={`${base}#sections`}>الأقسام</a><a href={`${base}#shop`}>الأسعار</a><a href={`${base}#gallery`}>معرض الأعمال</a><a href={`${base}#contact`}>اتصل بنا</a>
         </div>
         <div>
           <h4>خدماتنا</h4>
-          {c.services.map((t, i) => <a key={i} href="#services">{t}</a>)}
+          {c.services.map((t, i) => <a key={i} href={`${base}#services`}>{t}</a>)}
         </div>
         <div>
           <h4>تواصل</h4>
@@ -639,7 +648,7 @@ function Footer({ c, s }: { c: SiteContent["footer"]; s: SiteContent["settings"]
       </div>
       <div className="container footer__bottom">
         <span>© <span id="year">{new Date().getFullYear()}</span> المتحدة للمظلات — جميع الحقوق محفوظة.</span>
-        <a href="#home" className="totop" aria-label="العودة للأعلى"><Ico id="up" /></a>
+        <a href={`${base}#home`} className="totop" aria-label="العودة للأعلى"><Ico id="up" /></a>
       </div>
     </footer>
   );
