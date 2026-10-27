@@ -351,13 +351,12 @@ function Shop({ c, whatsapp }: { c: SiteContent["shop"]; whatsapp: string }) {
             <article className="shopc" key={i}>
               <div className="shopc__img">
                 <img src={p.image} alt={p.alt || p.title} loading="lazy" />
-                <span className="shopc__tag">{c.fromLabel} <b>{fmt(p.priceFrom)}</b> ريال</span>
               </div>
               <div className="shopc__body">
                 <h3>{p.title}</h3>
                 <div className="shopc__price">
-                  <small>{c.priceLabel}</small>
-                  <strong>{fmt(p.priceFrom)}<i>–</i>{fmt(p.priceTo)}</strong>
+                  <small>{c.fromLabel}</small>
+                  <strong>{fmt(p.priceFrom)}</strong>
                   <span>{c.unit}</span>
                 </div>
                 <a href={wa(whatsapp, `${c.messagePrefix} ${p.type}`.trim())} target="_blank" rel="noopener" className="btn btn--primary btn--block shopc__buy">

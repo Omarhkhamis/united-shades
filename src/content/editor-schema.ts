@@ -330,8 +330,7 @@ export const editorSchema: SectionSchema[] = [
               { kind: "image", name: "image", label: "الصورة" },
               { kind: "text", name: "title", label: "اسم المنتج" },
               { kind: "text", name: "type", label: "النوع في رسالة واتساب", hint: "يُكمل جملة «أريد عرض سعر لمظلة …» — مثال: كابولي" },
-              { kind: "number", name: "priceFrom", label: "السعر من (ريال)" },
-              { kind: "number", name: "priceTo", label: "السعر إلى (ريال)" },
+              { kind: "number", name: "priceFrom", label: "السعر يبدأ من (ريال)" },
               { kind: "text", name: "alt", label: IMAGE_ALT },
             ],
           },
@@ -340,9 +339,8 @@ export const editorSchema: SectionSchema[] = [
       {
         title: "النصوص الثابتة",
         fields: [
-          { kind: "text", name: "priceLabel", label: "عنوان السعر" },
           { kind: "text", name: "unit", label: "وحدة السعر" },
-          { kind: "text", name: "fromLabel", label: "نص «يبدأ من» على الصورة" },
+          { kind: "text", name: "fromLabel", label: "النص فوق السعر" },
           { kind: "text", name: "buttonLabel", label: "نص زر الشراء" },
           { kind: "text", name: "messagePrefix", label: "بداية رسالة واتساب", hint: "يُضاف بعدها نوع المظلة تلقائياً.", wide: true },
         ],
